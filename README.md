@@ -45,7 +45,7 @@ unsecured plain JWTs (`alg: none`) is excluded because jose-clj parses and
 detects them (`jose.jwt/parse-type` returns `:plain`) and every processor
 rejects them, but jose-clj will not produce one.
 
-Known upstream limitation: Nimbus 10.9.1's `JWSVerificationKeySelector`
+Known upstream limitation: Nimbus 10.10's `JWSVerificationKeySelector`
 returns no keys for a valid Ed25519 JWK from a JWKS source. This affects
 `jose.jws/verify-with-jwks`, `jose.jwt/build-processor`, and `jose.proc`; pass
 the key directly or provide a custom key selector.
@@ -55,16 +55,16 @@ the key directly or provide a custom key selector.
 deps.edn:
 
 ```clojure
-net.clojars.savya/jose-clj {:mvn/version "0.9.0"}
+net.clojars.savya/jose-clj {:mvn/version "0.9.1"}
 ```
 
 Leiningen:
 
 ```clojure
-[net.clojars.savya/jose-clj "0.9.0"]
+[net.clojars.savya/jose-clj "0.9.1"]
 ```
 
-Tracks `com.nimbusds/nimbus-jose-jwt` 10.9.1. jose-clj is a thin wrapper, so you
+Tracks `com.nimbusds/nimbus-jose-jwt` 10.10. jose-clj is a thin wrapper, so you
 get Nimbus updates, including security fixes, when you bump that one dependency.
 The weekly antq workflow proposes bumps automatically.
 

@@ -295,7 +295,7 @@
            (:jose/error (thrown-data #(proc/processor source {:jwe-encs #{:a256gcm}})))))))
 
 (deftest pins-nimbus-1091-eddsa-jwk-source-limitation
-  ;; Nimbus 10.9.1 JWSVerificationKeySelector returns no EdDSA key from JWKSource.
+  ;; Nimbus 10.10 JWSVerificationKeySelector returns no EdDSA key from JWKSource.
   (let [key (.generate (OctetKeyPairGenerator. Curve/Ed25519))
         source (ImmutableJWKSet. (JWKSet. [key]))
         selector (JWSVerificationKeySelector. #{JWSAlgorithm/EdDSA} source)

@@ -4,6 +4,13 @@ All notable changes to this project are documented here. Format follows [Keep a 
 
 ## [Unreleased]
 
+## [0.9.1] - 2026-10-04
+
+### Changed
+
+- Bump `com.nimbusds/nimbus-jose-jwt` to 10.10.
+- Bump the optional BouncyCastle artifacts to 1.86.
+
 ## [0.9.0] - 2026-08-30
 
 ### Security

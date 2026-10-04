@@ -52,7 +52,7 @@ algorithm policy is still needed for successful processing.
 criteria are `:classes` (such as `:jws` or `:jwe`), `:algorithms`, `:encryption-methods`, `:jwk-urls`,
 and `:key-ids`.
 
-Nimbus 10.9.1 has an upstream limitation: `JWSVerificationKeySelector` does
+Nimbus 10.10 has an upstream limitation: `JWSVerificationKeySelector` does
 not resolve EdDSA keys from a JWK source. Pass the key directly with a
 single-key selector, or provide a custom `:jws-key-selector` when processing
 EdDSA. This is also present in the library's existing JWT and JWS JWKS

@@ -11,7 +11,7 @@
                 org.slf4j/slf4j-nop {:mvn/version "2.0.20"}
                 ;; optional-at-runtime engines, present in tests so the
                 ;; :eddsa / :es256k paths are exercised
-                com.google.crypto.tink/tink {:mvn/version "1.23.0"}
+                com.google.crypto.tink/tink {:mvn/version "1.24.0"}
                 ;; bcprov has 1.85.2; bcpkix has no 1.85.2 release on Maven Central.
                 org.bouncycastle/bcprov-jdk18on {:mvn/version "1.86"}
                 org.bouncycastle/bcpkix-jdk18on {:mvn/version "1.86"}}
